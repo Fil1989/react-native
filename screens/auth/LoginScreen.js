@@ -61,9 +61,18 @@ const sendData = ()=>{
      </TouchableOpacity>
 
       </View>
-      <Text style={styles.auth_btn}
-        onPress={() => navigation.navigate('Registration')}
-      >Registration</Text>
+      <TouchableOpacity 
+      onPress={() => navigation.navigate('Registration')}
+      style={{marginTop: 20,
+      }}
+>
+  <Text style={{color: '#222222', fontSize:15, textAlign: 'center'}}
+  >New to application?{" "}
+  <Text style={styles.auth_btn}
+      >Sign up</Text>
+  </Text>
+      
+      </TouchableOpacity>
       </ImageBackground>
     </View>
     </TouchableWithoutFeedback>
@@ -112,10 +121,8 @@ marginTop:5,
       textAlign: 'center',
       borderRadius: 5,
 marginHorizontal:20,
-marginTop: 20,
     },
     auth_btn: {
-      marginHorizontal: 40,
       color: 'blue',
       fontSize: 20,
       textAlign: 'center',
